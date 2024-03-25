@@ -1,0 +1,42 @@
+lovelace:
+  mode: yaml
+  # Include external resources only add when mode is yaml, otherwise manage in the resources in the dashboard configuration panel.
+  resources:
+    - url: /local/my-custom-card.js
+      type: module
+    - url: /local/my-webfont.css
+      type: css
+  # Add more dashboards
+  dashboards:
+    lovelace-generated: # Needs to contain a hyphen (-)
+      mode: yaml
+      filename: notexist.yaml
+      title: Generated
+      icon: mdi:tools
+      show_in_sidebar: true
+      require_admin: true
+    lovelace-hidden:
+      mode: yaml
+      title: hidden
+      show_in_sidebar: false
+      filename: hidden.yaml
+
+button_card_templates:
+  police:
+    styles:
+      card:
+        - font-family: Avenir
+  style:
+    styles:
+      card:
+        - border-color: rgba(12, 12, 14, 0.2)
+        - border-style: outset
+        - border-width: 1px
+        - box-shadow: 1px 1px 2px 0px rgba(10, 10, 10,0.2)
+  no_style:
+    styles:
+      card:
+        - "--ha-card-border-width": 0px
+        - "--paper-card-background-color": rgba(0, 0, 0, 0.0)
+        - "--ha-card-background": rgba(0, 0, 0, 0.0)
+        - "--ha-card-box-shadow": none

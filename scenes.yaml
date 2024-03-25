@@ -1,0 +1,111 @@
+- id: '1693973521609'
+  name: Pipi/caca
+  entities:
+    light.chambre_lit:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      supported_color_modes:
+      - color_temp
+      friendly_name: 'Chambre lit '
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 51
+      color_temp_kelvin: 4000
+      color_temp: 250
+      hs_color:
+      - 26.812
+      - 34.87
+      rgb_color:
+      - 255
+      - 205
+      - 166
+      xy_color:
+      - 0.421
+      - 0.364
+      state: 'on'
+    light.salon:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: 'Salon '
+      supported_features: 32
+      color_mode: hs
+      brightness: 51
+      hs_color:
+      - 31.751
+      - 37.648
+      rgb_color:
+      - 255
+      - 209
+      - 158
+      xy_color:
+      - 0.424
+      - 0.377
+      state: 'on'
+    light.toilette:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      supported_color_modes:
+      - color_temp
+      friendly_name: Toilette
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 51
+      color_temp_kelvin: 2724
+      color_temp: 367
+      hs_color:
+      - 28.343
+      - 64.962
+      rgb_color:
+      - 255
+      - 167
+      - 89
+      xy_color:
+      - 0.524
+      - 0.387
+      state: 'on'
+  metadata: {}
+- id: '1693974197831'
+  name: 'Fin Pipi/caca '
+  entities:
+    light.chambre_lit:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      supported_color_modes:
+      - color_temp
+      friendly_name: 'Chambre lit '
+      supported_features: 32
+      state: 'off'
+    light.salon:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: 'Salon '
+      supported_features: 32
+      state: 'off'
+    light.toilette:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      supported_color_modes:
+      - color_temp
+      friendly_name: Toilette
+      supported_features: 32
+      state: 'off'
+  metadata: {}
+  icon: mdi:paper-roll
